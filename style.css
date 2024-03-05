@@ -1,0 +1,141 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%) no-repeat;
+  background-size: 100vw 100vh;
+  font-size: 1.6rem;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  font-family: "DM Sans", sans-serif;
+}
+
+
+
+main {
+  border-radius: .5rem;
+  background: #FfF;
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.80);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  width: 30rem
+}
+
+
+/*screen 1*/
+h1 {
+   font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #34355B;
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  font-weight: 1.5rem;
+  font-weight: 400;
+  color: #34355B;
+  text-align: center;
+  margin: 1.4rem 0 2rem 0;
+}
+
+#btntry {
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+
+.btntry:hover {
+  animation: shake 0.06s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes shake{
+  from {
+  transform: rotate(0.006turn);
+  }
+  to {
+    transform: rotate(0);
+  }
+
+}
+
+
+/*screen 2*/
+
+
+
+.screen2 .phrase {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.7rem;
+  
+  background: #E4EDF1;
+  box-shadow: .2rem .2rem .2rem 0 rgba(85, 85, 85, 0.50); 
+}
+.screen2 .phrase p {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.4rem;
+  color: #000;
+}
+
+
+.screen2 img {
+  margin: 4.3rem 0 4.3rem;
+}
+
+#btnother {
+  border-radius: 4px;
+background: #FF9500;
+color: #FFF;
+
+display: flex;
+padding: 16px;
+align-items: flex-start;
+gap: 10px;
+border: 0;
+width: fit-content;
+margin: 0 auto;
+cursor: pointer;
+
+}
+
+.btnother:hover {
+  background: #9c5b00;
+}
+
+
+.screen2 .phrase {
+ animation: message 3s forwards;
+
+}
+
+@keyframes message {
+  from {
+    transform: translateY(100%) scale(0.2);
+    opacity: .2;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
