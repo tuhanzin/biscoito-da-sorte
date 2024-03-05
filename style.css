@@ -11,7 +11,6 @@
 
 body {
   background: linear-gradient(45deg, #190361 0%, #B0F 100%) no-repeat;
-  background-size: 100vw 100vh;
   font-size: 1.6rem;
 
   display: grid;
@@ -62,7 +61,7 @@ p {
    cursor: pointer;
 }
 
-.btntry:hover {
+#btntry:hover {
   animation: shake 0.06s ease-in-out infinite alternate-reverse;
 }
 
